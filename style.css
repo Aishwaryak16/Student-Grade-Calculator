@@ -1,0 +1,150 @@
+body {
+    background:#43c1a6;
+    font-size: 12px;
+  }
+  
+  body, button, input {
+    font-family: cursive;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  .error
+  {
+    color: red;
+    display: none;
+  }
+  
+  .main {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .container {
+    /*flex: 0 1 700px;*/
+    margin: auto;
+    width:50%;
+  }
+  
+  .box {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+    padding: 40px;
+  }
+  
+  .box:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .box-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .box-body-item {
+    flex: 1;
+  }
+  
+  .box-body-item.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  
+  }
+  
+  .app-title {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: left;
+    align-items: left;
+    color: #33d9b2;
+    font-size: 26px;
+    text-transform: uppercase;
+    border-left: 4px solid #218c74;
+    padding: 10px;
+  }
+  
+  .app-form-group {
+    margin-bottom: 30px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control { 
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #ffffff8a;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ffffff;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #33d9b2;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+  }
+  
+  .app-form-button:hover {
+    color: #218c74;
+  }
+  
+  .showdata{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: -10px;
+    padding-bottom: 10px;
+  }
+
+
+  @media only screen and (max-width: 950px) {
+    .box-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container
+    {
+      width: 90%;
+    }
+
+    .box-body-item.left
+    {
+      margin-bottom: 50px;
+    }
+  }
+ 
